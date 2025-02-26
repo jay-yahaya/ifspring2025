@@ -1,0 +1,117 @@
+html {
+  font-family: "Archivo Narrow", serif;
+}
+
+header {
+  background-color: rgba(255, 0, 0, 0.5);
+  padding-top: 166px;
+  padding-bottom: 188px;
+  background-size: cover;
+  background-position: center;
+}
+
+header h1 {
+  text-align: center;
+  margin: 0 0 16px 0;
+  font-size: 80px;
+  line-height: 1;
+  color: white;
+}
+
+header h2 {
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  line-height: 1;
+  color: white;
+}
+
+section {
+  padding: 48px 0 0 0;
+}
+
+h3 {
+  text-align: center;
+  font-size: 40px;
+  line-height: 1;
+  margin: 0 0 38px 0;
+}
+
+h4 {
+  margin: 0;
+  font-size: 1.3em;
+  font-weight: bolder;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.p2, .p3 {
+  margin-top: -2px;
+}
+
+section .column {
+  width: 960px;
+  margin: auto;
+  padding: 0 0 38px 0;
+}
+
+#introduction {
+  background-color: rgb(190, 112, 76);
+}
+
+#introduction img {
+  width: 400px;
+  height: 300px;
+  float: right;
+  border: solid 1px white;
+  margin: 0 0 20px 38px;
+}
+
+#captioned-images {
+  background-color: rgb(150, 52, 16);
+  color: white;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+
+.grid-item img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  object-position: top;
+}
+
+#conclusion {
+  background-color: rgb(111, 153, 96);
+  padding-bottom: 36px;
+  color: black;
+}
+
+#conclusion p {
+  font-size: 26px;
+  text-align: center;
+  padding: 0 120px;
+}
+
+footer {
+  background-color: rgb(66, 100, 66);
+  padding: 10px 0;
+}
+
+footer div {
+  width: 960px;
+  margin: auto;
+  color: white;
+}
+
+footer p {
+  padding: 12px 0;
+}
