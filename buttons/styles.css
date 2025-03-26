@@ -1,0 +1,334 @@
+
+body {
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: 40px;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+a:visited {
+    color: inherit;
+}
+.button_container {
+    border: 1px solid #ddd;
+    margin: 0 10px 10px 0;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    float: left;
+    overflow: hidden;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+
+a#btn_spotify {
+    display: inline-block;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 10px 40px 0 40px;
+    background-color: #2ebd59;
+    border: 2px solid #2ebd59;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+a#btn_spotify:hover {
+    background-color: #fff;
+    border: 2px solid #000;
+    color: #000;
+}
+
+a#btn_amazon {
+    display: block;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    margin: auto;
+    margin-top: 75px;
+    padding-top: 8px;
+    background-color: #232f3e;
+    color: #fff;
+    text-align: center;
+    font-size: 60px;
+    transition: all .2s;
+}
+
+a#btn_amazon:hover {
+    background-color: #fc9a18;
+}
+
+a#btn_twitter {
+    display: inline-block;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin: auto;
+    margin-top: 105px;
+    padding: 10px 30px 0 30px;
+    background-color: #56cdf1;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a#btn_twitter:hover {
+
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2ebfec+0,28a5cb+100 */
+    background: rgb(46,191,236); /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  rgba(46,191,236,1) 0%, rgba(40,165,203,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  rgba(46,191,236,1) 0%,rgba(40,165,203,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  rgba(46,191,236,1) 0%,rgba(40,165,203,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2ebfec', endColorstr='#28a5cb',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+a#btn_indiegogo {
+    display: inline-block;
+    position: relative;
+    margin:auto;
+    margin-top: 100px;
+    padding: 8px 16px;
+    background-color: #fff;
+    color: #eb1478;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: -2px;
+    transition: all .2s;
+}
+
+a#btn_indiegogo:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #eb1478;
+    transition: all .5s;
+}
+
+a#btn_indiegogo:hover {
+    color: #fff;
+}
+
+a#btn_indiegogo:hover:before {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+a#btn_indiegogo span {
+    position: relative;
+    z-index: 10;
+}
+
+#btn_nike, 
+#btn_apple, 
+#btn_linkedin, 
+#btn_snapchat, 
+#btn_microsoft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 50%;
+    height: 50%;
+    align-items: center;
+    margin-top: 60px;
+    margin-left: 60px;
+}
+
+/* NIKE */
+#btn_nike {
+    background: black;
+    font-size: 50px;
+    font-family: 'Montserrat Bold', sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    box-sizing: border-box;
+    text-align: center;
+    transition: color 0.4s ease;
+    border: none;
+    width: 150px;
+    height: 100px;
+    margin-top: 60px;
+}
+
+#btn_nike::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background: white;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    transition: width 0.3s ease;
+}
+
+#btn_nike:hover::before {
+    width: 100%;
+}
+
+#btn_nike span {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#btn_nike:hover {
+    color: black;
+}
+
+#btn_nike:hover i {
+    transform: scale(1.2);
+}
+
+
+/* APPLE */
+#btn_apple {
+	font-family: 'Ubuntu', sans-serif;
+    font-size: 100px;
+    color: black;
+}
+#btn_apple:hover {
+	transform: rotate(-3600deg);
+    font-size: 150px;
+    color: red;
+    transition: 0.4s ease;
+}
+
+/* LINKEDIN */
+#btn_linkedin {
+    background: #0077B5;
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#btn_linkedin::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background: #005582;
+    left: 0;
+    top: 0;
+    transition: width 0.3s ease;
+    z-index: 0;
+}
+
+#btn_linkedin:hover::before {
+    width: 100%;
+}
+
+#btn_linkedin .fa-linkedin {
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+
+#btn_linkedin:hover .fa-linkedin {
+    transform: scale(1.2);
+}
+
+/* SNAPCHAT */
+#btn_snapchat {
+	background: yellow;
+	color: black;
+    font-size: 50px; 
+	font-weight: bold;
+	border: 2px solid black;
+    border-radius: 20%;
+}
+#btn_snapchat:hover {
+	transform: rotate(15deg) scale(1.3);
+    transition: 0.3s ease;
+	box-shadow: 0 0 30px yellow;
+}
+
+/* MICROSOFT */
+#btn_microsoft {
+    background: white;
+    color: rgba(0, 17, 255, 0.911);
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.4s ease;
+}
+
+#btn_microsoft::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    background: rgb(1, 159, 251);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+
+#btn_microsoft:hover::before {
+    width: 300%;
+    height: 300%;
+    opacity: 1;
+}
+
+#btn_microsoft:hover {
+    color: white;
+}
+
+#btn_microsoft .fa-windows {
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s ease;
+}
+
+#btn_microsoft:hover .fa-windows {
+    color: white;
+}
