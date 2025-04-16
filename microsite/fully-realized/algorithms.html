@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Rubik's Cube Algorithms</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jaro:opsz@6..72&family=Saira:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+        <link rel="icon" href="images/rubik.png">
+    </head>
+
+    <body>
+        <div class="page-wrapper">
+            <nav class="navbar">
+                <div class="navbar-container">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="mechanics.html">Mechanics</a></li>
+                        <li><a href="algorithms.html" class="active">Algorithms</a></li>
+                        <li><a href="competitions.html">Competitions</a></li>
+                        <li><a href="sources.html">Sources</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="content-container">
+                <section class="page-section">
+                    <div class="section-header">
+                        <h2>The Path to Solving a Cube</h2>
+                    </div>
+                    <div class="section-content">
+                        <div class="text-content">
+                            <p>Solving the Rubik's Cube follows a methodical approach rather than random twisting. Most solving methods break down the complex puzzle into manageable steps,
+                                solving one section at a time without disturbing previously solved pieces. Let's explore the journey from basic beginner methods to advanced speedcubing techniques.</p>
+                    </div>
+                </section>
+
+                <section class="page-section">
+                    <div class="section-header">
+                        <h2>Beginner's Method</h2>
+                    </div>
+                    <div class="section-content">
+                        <div class="text-content">
+                            <p><u><strong>The Layer-by-layer Approach</strong></u></p>
+                            <ol>
+                                <li>Begin by forming a cross on one face (typically white). Focus on aligning the edge pieces correctly with their corresponding center pieces.</li>
+                                <li>Insert corner pieces to complete the first layer. Common algorithm: R' D' R D (repeated as needed). This completes 1/3 of the cube</li>
+                                <li>Position and orient the middle layer edge pieces. Right algorithm: U R U' R' U' F' U F. Left algorithm: U' L' U L U F U' F'</li>
+                                <li>Form a cross on the last face (typically yellow). Algorithm: F R U R' U' F'</li>
+                                <li>Position the corners correctly without concern for orientation. Algorithm: R U R' U R U2 R'</li>
+                                <li>Move corners to their correct positions. Algorithm: U R U' L' U R' U' L/li>
+                                <li>Complete the cube by positioning the final edges. Algorithm: R2 U F B' R2 F' B U R2</li>
+                            </ol>
+                        </div>
+
+                        <div class="image-container">
+                            <figure>
+                                <img src="images/algorithms/notations.webp" alt="Rubik's Cube Algorithm Notations">
+                                <figcaption>Notations for Rubik's Cube Algorithms</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="page-section">
+                    <div class="section-header">
+                        <h2>Intermediate Methods</h2>
+                    </div>
+                    <div class="section-content">
+                        <div class="text-content">
+                            <p><u><strong>CFOP Method (Fridrich Method)</strong></u></p>
+                            <p>The most popular speedcubing method includes:</p>
+                            <ul>
+                                <li><strong>Cross:</strong> Similar to the beginner method.</li>
+                                <li><strong>F2L (First Two Layers):</strong>Solving the first two layers simultaneously.</li>
+                                <li><strong>OLL (Orient Last Layer):</strong> Orienting all pieces of the last layer in one step (21 algorithms).</li>
+                                <li><strong>PLL (Permute Last Layer):</strong> Arranging all pieces in their correct positions (21 algorithms).</li>
+                            </ul>
+                            <p>Unlike simpler puzzles, the Rubik's Cube doesn't rely on detachable pieces. Instead, it uses a complex system of rounded extensions
+                                and internal tracks that allow pieces to slide past each other during rotation. This clever design enables the seemingly magical
+                                transformations while keeping all 26 visible pieces connected.
+                            </p>
+                            
+                            <p><u><strong>Roux Method</strong></u></p>
+                            <p>An alternative approach focusing on block-building:</p>
+                            <ul>
+                                <li>Build two 1x2x3 blocks on the left and right sides</li>
+                                <li>Solve the upper corners and orient edges</li>
+                                <li>Complete the cube with M-slice moves</li>
+                            </ul>
+                        </div>
+
+                        <div class="image-container">
+                            <figure>
+                                <img src="images/algorithms/fridrich-method.webp" alt="Fridrich Method">
+                                <figcaption>CFOP Method (Fridrich Method)</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="page-section">
+                    <div class="section-header">
+                        <h2>Advanced Methods</h2>
+                    </div>
+                    <div class="section-content">
+                        <div class="text-content">
+                            <p>Elite speedcubers employ sophisticated strategies:</p>
+                            <p><strong>Look-ahead</strong>— Cubers plan several moves in advance while executing current algorithms and eliminate pauses between steps.</p>
+                            <p><strong>Finger Tricks</strong>— They use specialized finger movements for maximum turning efficiency and allow for extremely fast algorithm execution.</p>
+                            <p><strong>Algorithm Optimization</strong>— They customize algorithms for specific cases and reducing move count.</p>
+                            <p><strong>Advanced F2L Techniques</strong>— They use empty slots strategically and handle difficult cases with specialized algorithms.</p>
+                            </ul>
+                        </div>
+
+                        <div class="image-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/wLuVF9Dk3AQ?si=0fuVpQP8gn0uH13o" title="YouTube video player" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="page-section">
+                    <div class="section-header">
+                        <h2>Breaking Records</h2>
+                    </div>
+                    <div class="section-content">
+                        <div class="text-content">
+                            <p>World-class speedcubers combine:</p>
+                            <ul>
+                                <li>Extensive algorithm memorization (often 100+ algorithms).</li>
+                                <li>Pattern recognition developed through thousands of practice solves.</li>
+                                <li>Cube hardware optimized for speed.</li>
+                                <li>Turning speeds exceeding 10 turns per second.</li>
+                            </ul>
+                            <p>The current world record for a single 3x3x3 Rubik's Cube solve stands at 3.08 seconds, achieved by Yiheng Wang in 2025 — a testament to how far
+                                solving techniques have evolved from the original methods that took minutes or even hours to complete.
+                            </p>
+                        </div>
+                        <div class="image-container">
+                            <figure>
+                                <img src="images/algorithms/world-record.webp" alt="Speedcube World Record">
+                                <figcaption>Yiheng Wang celebrating his 3.08s 3x3x3 Record</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </body>
+
+    <footer>
+        Designed by Jalal-Abdul Yahaya | Interaction Foundations Spring 2025 &reg;
+    </footer>
+</html>
